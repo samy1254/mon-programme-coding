@@ -1,23 +1,258 @@
 <!DOCTYPE html>
-<html lamg="fr">
-
- <head>
-   <link rel="stylesheet" href="style.css">
-   <meta charset="UTF-8">
-   <title>Mon ptrmier projet</title>
- </head>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio de Samy Bouras</title>
+  <link rel="stylesheet" href="style.css">
+</head>
 <body>
-  <h1>Ma page avec Grid</h1>
 
-  <div class="grille">
-    <div class="case">Case 1</div>
-    <div class="case">Case 2</div>
-    <div class="case">Case 3</div>
-    <div class="case">Case 4</div>
-    <div class="case">Case 5</div>
-    <div class="case">Case 6</div>
-  </div>
+  <!-- NAVIGATION -->
+  <nav>
+    <div class="nav-logo">SB</div>
+    <ul class="nav-links">
+      <li><a href="#accueil">Accueil</a></li>
+      <li><a href="#competences">Compétences</a></li>
+      <li><a href="#projets">Projets</a></li>
+      <li><a href="#formation">Formation</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 
+  <!-- HERO -->
+  <section id="accueil" class="hero">
+    <div class="hero-content">
+      <p class="hero-salut">Bonjour, je suis</p>
+      <h1 class="hero-nom">Samy Bouras</h1>
+      <p class="hero-titre" id="titre-dynamique"></p>
+      <div class="hero-btns">
+        <a href="#projets" class="btn-primary">Voir mes projets</a>
+        <a href="#contact" class="btn-secondary">Me contacter</a>
+      </div>
+    </div>
+    <div class="hero-avatar">SB</div>
+  </section>
+
+  <!-- COMPÉTENCES -->
+  <section id="competences">
+    <h2 class="section-titre">Mes compétences</h2>
+    <p class="section-sous">Ce que j'apprends et maîtrise</p>
+    <div class="skills-grid">
+
+      <div class="skill-card">
+        <div class="skill-icon html">HTML</div>
+        <h3>HTML</h3>
+        <div class="progress-bar">
+          <div class="progress-fill" data-width="75"></div>
+        </div>
+        <span class="progress-label">75%</span>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon css">CSS</div>
+        <h3>CSS</h3>
+        <div class="progress-bar">
+          <div class="progress-fill" data-width="70"></div>
+        </div>
+        <span class="progress-label">70%</span>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon python">PY</div>
+        <h3>Python</h3>
+        <div class="progress-bar">
+          <div class="progress-fill" data-width="30"></div>
+        </div>
+        <span class="progress-label">30%</span>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon java">JV</div>
+        <h3>Java</h3>
+        <div class="progress-bar">
+          <div class="progress-fill" data-width="10"></div>
+        </div>
+        <span class="progress-label">10%</span>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon cpp">C++</div>
+        <h3>C++</h3>
+        <div class="progress-bar">
+          <div class="progress-fill" data-width="5"></div>
+        </div>
+        <span class="progress-label">5%</span>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon reseau">NET</div>
+        <h3>Réseaux</h3>
+        <div class="progress-bar">
+          <div class="progress-fill" data-width="5"></div>
+        </div>
+        <span class="progress-label">5%</span>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PROJETS -->
+  <section id="projets" class="section-dark">
+    <h2 class="section-titre blanc">Mes projets</h2>
+    <p class="section-sous blanc">Ce que j'ai construit jusqu'ici</p>
+    <div class="projets-grid">
+
+      <div class="projet-card">
+        <div class="projet-tag">HTML / CSS</div>
+        <h3>Page Portfolio</h3>
+        <p>Mon portfolio personnel avec navigation, animations et design responsive.</p>
+        <div class="projet-footer">
+          <span class="statut termine">Terminé</span>
+          <a href="https://github.com/samy1254" target="_blank" class="projet-lien">GitHub →</a>
+        </div>
+      </div>
+
+      <div class="projet-card">
+        <div class="projet-tag">Python</div>
+        <h3>Calculatrice Python</h3>
+        <p>Application console avec opérations mathématiques et gestion d'erreurs.</p>
+        <div class="projet-footer">
+          <span class="statut en-cours">En cours</span>
+          <a href="https://github.com/samy1254" target="_blank" class="projet-lien">GitHub →</a>
+        </div>
+      </div>
+
+      <div class="projet-card">
+        <div class="projet-tag">Java / Android</div>
+        <h3>Application Android</h3>
+        <p>Appli mobile</p>
+        <div class="projet-footer">
+          <span class="statut futur">À venir</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FORMATION -->
+  <section id="formation">
+    <h2 class="section-titre">Mon parcours</h2>
+    <p class="section-sous">Plan d'apprentissage sur 12 mois</p>
+    <div class="timeline">
+
+      <div class="timeline-item actif">
+        <div class="timeline-point"></div>
+        <div class="timeline-content">
+          <span class="timeline-date">Mois 1-2</span>
+          <h3>HTML / CSS</h3>
+          <p>Structure web, Flexbox, Grid, animations, responsive design</p>
+        </div>
+      </div>
+
+      <div class="timeline-item prochain">
+        <div class="timeline-point"></div>
+        <div class="timeline-content">
+          <span class="timeline-date">Mois 2-4</span>
+          <h3>Python</h3>
+          <p>Scripts, POO, fichiers, API, automatisation</p>
+        </div>
+      </div>
+
+      <div class="timeline-item prochain">
+        <div class="timeline-point"></div>
+        <div class="timeline-content">
+          <span class="timeline-date">Mois 4-6</span>
+          <h3>Java</h3>
+          <p>POO avancée, collections, interfaces, bases Android</p>
+        </div>
+      </div>
+
+      <div class="timeline-item prochain">
+        <div class="timeline-point"></div>
+        <div class="timeline-content">
+          <span class="timeline-date">Mois 6-8</span>
+          <h3>C++</h3>
+          <p>Pointeurs, mémoire, STL, algorithmes</p>
+        </div>
+      </div>
+
+      <div class="timeline-item prochain">
+        <div class="timeline-point"></div>
+        <div class="timeline-content">
+          <span class="timeline-date">Mois 8-10</span>
+          <h3>Réseaux</h3>
+          <p>TCP/IP, DNS, sécurité, certification CCNA</p>
+        </div>
+      </div>
+
+      <div class="timeline-item futur">
+        <div class="timeline-point"></div>
+        <div class="timeline-content">
+          <span class="timeline-date">Mois 10-12</span>
+          <h3>Android & Play Store</h3>
+          <p>Appli complète</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+<!-- BUTS PROFESSIONNELS -->
+  <section id="contact" class="section-dark">
+    <h2 class="section-titre blanc">Mes buts professionnels</h2>
+    <p class="section-sous blanc">Ce que je veux accomplir dans ma carrière</p>
+    <div class="buts-grid">
+
+      <div class="but-card">
+        <div class="but-numero">01</div>
+        <h3>Développeur Full Stack</h3>
+        <p>Maîtriser le développement web de A à Z — front-end, back-end et base de données — pour créer des applications complètes et professionnelles.</p>
+        <span class="but-delai">Objectif : 12 mois</span>
+      </div>
+
+      <div class="but-card">
+        <div class="but-numero">02</div>
+        <h3>Ingénieur Cybersécurité</h3>
+        <p>Obtenir la certification CCNA puis spécialisation en sécurité réseau pour protéger les systèmes informatiques des entreprises contre les cyberattaques.</p>
+        <span class="but-delai">Objectif : 18 mois</span>
+      </div>
+
+      <div class="but-card">
+        <div class="but-numero">03</div>
+        <h3>Développeur Android</h3>
+        <p>Publier des applications Android sur le Play Store et contribuer à des projets open source pour construire un portfolio solide reconnu par les recruteurs.</p>
+        <span class="but-delai">Objectif : 24 mois</span>
+      </div>
+
+      <div class="but-card">
+        <div class="but-numero">04</div>
+        <h3>Expert Réseau et Sécurité</h3>
+        <p>Décrocher un poste d'ingénieur réseau dans une entreprise tech ou une organisation internationale et contribuer à sécuriser des infrastructures critiques.</p>
+        <span class="but-delai">Objectif : 3 ans</span>
+      </div>
+
+    </div>
+
+    <div class="contact-box" style="margin-top: 60px;">
+      <h3 style="color:white;text-align:center;margin-bottom:20px;font-size:20px">Me contacter</h3>
+      <div class="contact-item">
+        <span class="contact-icon">📧</span>
+        <span>bouras.samy2001@gmail.com</span>
+      </div>
+      <div class="contact-item">
+        <span class="contact-icon">💻</span>
+        <span>github.com/samy1254</span>
+      </div>
+      <div class="contact-item">
+        <span class="contact-icon">📍</span>
+        <span>Algérie</span>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <p>© 2026 Samy Bouras — Développeur en formation</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
-  
 </html>
