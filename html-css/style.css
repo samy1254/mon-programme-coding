@@ -45,3 +45,28 @@ p {
   border-radius: 10px;
   font-size: 18px;
 }
+/* Tablette - écran moins de 768px */
+@media (max-width: 768px) {
+  .grille {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+}
+
+/* Mobile - écran moins de 480px */
+@media (max-width: 480px) {
+  .grille {
+    grid-template-columns: 1fr;
+  }
+
+  h1 {
+    font-size: 18px;
+  }
+
+  .case {
+    padding: 20px;
+  }
+}
